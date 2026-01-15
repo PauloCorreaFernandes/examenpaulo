@@ -69,6 +69,11 @@ fen.setGeometry(100,100,420,160)
 grid = QGridLayout()
 fen.setLayout(grid)
 
+#Labels + champs
+lbl_nom = QLabel(("Entrer le valeur de N ")
+le_n =  QLineEdit()
+
+
 
 
 
