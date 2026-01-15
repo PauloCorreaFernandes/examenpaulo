@@ -34,3 +34,9 @@ def sauvegarder_resultat():
     except Exception as e:
         print("Erreur du sauvegarder !", e)
         lbl_msg.setText("ERREUR : Impossible de sauvegarder !")
+
+def charger_resultat():
+    try:
+        f = open(FICHIER, "r")
+        contenu = f.read().strip()
+        f.close()
