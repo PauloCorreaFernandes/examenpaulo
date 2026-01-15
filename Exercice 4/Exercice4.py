@@ -24,7 +24,7 @@ class Professeur(Personne):
 #Programme Principal
 #Creation des objets
 p1 = Etudiangt("Paulo")
-p2 = Professeur("Barbari, Raouf")
+p2 = Professeur("Barbari,Raouf")
 p3 = Personne("Seye")
 
 #Liste de contenant differents types d'objet
