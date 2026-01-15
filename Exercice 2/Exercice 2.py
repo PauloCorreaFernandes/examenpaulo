@@ -53,4 +53,10 @@ def charger_resultat():
 
         except FileNotFoundError:
             lbl_msg.setText("Erreur: contenu du fichier invalide")
+        except Exception as e:
+            print("Erreur chargement :", e)
+            lbl_msg.setText("Erreur: Impossible de charger !")
+
+#1 - Creer un objet application
+app = QApplication([])
 
