@@ -6,14 +6,15 @@ from numpy.ma.core import minimum
 #le minimum , le maximum , la somme et la moyenne
 #Les resultats sont conserves dans le fichier  resultats.txt
 
+from numpy.ma.core import minimum
 class Outils:
     def __init__(self):
         #liste pour stocker les entiers
         self.nombres = []
 
-    def saisir(selfself):
+    def saisir(self):
         #demander 10 entiers au usager
-        for i in range(1,11):
+        for i in range(1, 11):
             n= int(input("Tapez un nombre entier(" + str(i) + "/10) : "))
             self.nombres.append(n)
 
@@ -59,6 +60,8 @@ fichier.write("Minimum : " + str(min_val)+"\n")
 fichier.write("Maximum : " + str(max_val)+"\n")
 fichier.write("Somme : " + str(somme_val)+"\n")
 fichier.write("Moyenne : " + str(moyenne_val)+"\n")
+fichier.close()
+
 
 
 
