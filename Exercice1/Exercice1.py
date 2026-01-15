@@ -27,3 +27,6 @@ class Affichage:
 
         #creer un objet triangle
         t=Triangle(n)
+
+        # afficher le premier triangle
+        t.afficher_triangle_1()
