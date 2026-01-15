@@ -40,7 +40,11 @@ class Outils:
         #calcul de la moyenne
         return self.somme() / len(self.nombres)
 
-
+    def somme(self):
+        somme = 0
+        for n in self.nombres:
+            total = total + n
+        return total
 
 #programme principal
 o = Outils()
