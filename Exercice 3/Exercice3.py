@@ -38,4 +38,13 @@ class Outils:
         #calcul de la moyenne
         return self.somme() / len(self.nombres)
 
+#programme principal
+o = Outils()
+o.saisir()
+
+min_val = o.min()
+max_val = o.max()
+somme_val = o.somme()
+moyenne_val = o.moyenne()
+
 
