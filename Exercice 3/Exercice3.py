@@ -34,4 +34,8 @@ class Outils:
             total = total + n
         return total
 
+    def moyenne(self):
+        #calcul de la moyenne
+        return self.somme() / len(self.nombres)
+
 
