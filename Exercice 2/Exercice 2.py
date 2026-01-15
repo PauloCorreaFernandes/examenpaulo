@@ -87,8 +87,20 @@ btn_sauve.clicked.connect(sauvegarder_resultat)
 btn_load = QPushButton("Charger")
 btn_load.clicked.connect(charger_resultat)
 
+#Message (Petit Label d'erreur ou information)
+lbl_msg = QLabel("")
 
+#Placement
+grid.addWidget(lbl_n, 0, 0)
+grid.addWidget(le_n, 0, 1)
 
+grid.addWidget(lbl_double, 1, 0)
+grid.addWidget(le_double, 1, 1)
+
+grid.addWidget(btn_valider, 2, 1)
+grid.addWidget(btn_sauve, 2, 0)
+grid.addWidget(btn_load, 3, 0)
+grid.addWidget(lbl_msg, 3, 1)
 
 
 
