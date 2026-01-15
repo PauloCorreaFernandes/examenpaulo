@@ -93,7 +93,7 @@ btn_load.clicked.connect(charger_resultat)
 lbl_msg = QLabel("")
 
 #Placement
-grid.addWidget(lbl_n, 0, 0)
+grid.addWidget(lbl_nom, 0, 0)
 grid.addWidget(le_n, 0, 1)
 
 grid.addWidget(lbl_double, 1, 0)
