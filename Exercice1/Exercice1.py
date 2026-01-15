@@ -30,3 +30,7 @@ class Affichage:
 
         # afficher le premier triangle
         t.afficher_triangle_1()
+
+        #laisser une ligne vide entre les deux triangles
+        print()
+
