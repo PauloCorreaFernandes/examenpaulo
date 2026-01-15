@@ -77,6 +77,17 @@ lbl_double = QLabel("Voici le double: ")
 le_double = QLineEdit()
 le_double.setReadonly(True)
 
+#Boutons
+btn_valider = QPushButton("Valider l'operation")
+btn_valider.clicked.connect(valider_operation)
+
+btn_sauve = QPushButton("Sauvegarder")
+btn_sauve.clicked.connect(sauvegarder_resultat)
+
+btn_load = QPushButton("Charger")
+btn_load.clicked.connect(charger_resultat)
+
+
 
 
 
