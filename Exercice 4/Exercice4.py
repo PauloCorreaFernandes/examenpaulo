@@ -30,5 +30,9 @@ p3 = Personne("Seye")
 #Liste de contenant differents types d'objet
 personnes = [p1, p2, p3]
 
+#Boucle qui appelle la meme methode sur chaque objet
+for p in personnes:
+    print(p.se_presenter())
+
 
 
