@@ -14,5 +14,8 @@ def valider_operation():
     try:
         n = int(le_n.text()) # peut lever ValueError
         resultat = n* 2
-        le_double.setText(str(resultat))
+        le_double.setText(str(resultat)) #le= line edit
+        lbl_msg.setText("") #lbl = label
+    except ValueError:
+        lbl_msg.setText(" Erreur: Devez-vous tapez un nombre entier  !")
 
