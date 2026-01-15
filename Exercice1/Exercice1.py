@@ -17,3 +17,10 @@ class Triangle:
     #methode  qui affiche le triangle a droite
         for in range(1, self.n + 1):
             print('*' * i)
+
+class Affichage:
+    def __init__(self,n):
+        pass
+    def afficher(self):
+        #demander a usager le nombre de lignes
+        n= int(input("Tapez le nombre de lignes que vous voulez:"))
