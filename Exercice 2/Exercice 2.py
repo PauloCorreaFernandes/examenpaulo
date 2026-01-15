@@ -73,6 +73,13 @@ fen.setLayout(grid)
 lbl_nom = QLabel(("Entrer le valeur de N ")
 le_n =  QLineEdit()
 
+lbl_double = QLabel("Voici le double: ")
+le_double = QLineEdit()
+le_double.setReadonly(True)
+
+
+
+
 
 
 
