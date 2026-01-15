@@ -37,4 +37,8 @@ class Affichage:
         #afficher le deuxieme triangle
         t.afficher_triangle_2()
 
+# programme principal
+a = Affichage()
+a.afficher()
+
 
