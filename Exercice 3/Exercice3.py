@@ -28,7 +28,7 @@ class Outils:
 
         return minimum
 
-    def maximum(self):
+    def max(self):
         #calcule de la somme
         total = 0
         for n in self.nombres:
