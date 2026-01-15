@@ -10,7 +10,7 @@ class Triangle:
         #afficher deux triangles cote a cote
         for i in range(1, self.n + 1):
             gauche= "*" * i
-            espaces= " " * (self.n + 2)
+            espaces= " " * (2 *(self.n - i) +4)
             droite= "*" * i
             print(gauche + espaces + droite)
 
