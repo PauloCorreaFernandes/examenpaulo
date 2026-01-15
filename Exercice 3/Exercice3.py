@@ -1,4 +1,6 @@
 #Examen Final : Exercice 3
+from numpy.ma.core import minimum
+
 
 #Programme qui demande 10 entiers et calcule
 #le minimum , le maximum , la somme et la moyenne
@@ -14,3 +16,15 @@ class Outils:
         for i in range(1,11):
             n= int(input("Tapez un nombre entier(" + str(i) + "/10) : "))
             self.nombres.append(n)
+
+    def min(self):
+        #initialiser le minimum avec le premier nombre
+        minimum = self.nombres[0]
+
+        for n in self.nombres:
+            if n < minimum:
+                minimum = n
+
+        return minimum
+
+
