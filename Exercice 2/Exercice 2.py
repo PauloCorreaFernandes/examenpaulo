@@ -72,7 +72,7 @@ grid = QGridLayout()
 fen.setLayout(grid)
 
 #Labels + champs
-lbl_nom = QLabel(("Entrer le valeur de N ")
+lbl_nom = QLabel("Entrer le valeur de N ")
 le_n =  QLineEdit()
 
 lbl_double = QLabel("Voici le double: ")
