@@ -2,6 +2,6 @@
 #Programme que affiche deux triangles d'etoiles
 
 class Triangle:
-    def__init__(self,n):
+    def __init__(self,n):
     #constructeur : nombre de lignes
     self.n = n
