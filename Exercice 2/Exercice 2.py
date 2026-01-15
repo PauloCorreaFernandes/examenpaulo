@@ -60,8 +60,13 @@ def charger_resultat():
 #1 - Creer un objet application
 app = QApplication([])
 
-#2 Creer fenettre Widget
+#2 - Creer fenettre Widget
 fen = QWidget()
 fen.setWindowTitle("Exercice double")
 fen.setGeometry(100,100,420,160)
+
+#3 - Layout
+grid = QGridLayout()
+fen.setLayout(grid)
+
 
