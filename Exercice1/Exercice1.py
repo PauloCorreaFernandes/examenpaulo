@@ -23,4 +23,4 @@ class Affichage:
         pass
     def afficher(self):
         #demander a usager le nombre de lignes
-        n= int(input("Tapez le nombre de lignes que vous voulez:"))
+        n= int(input("Tapez le nombre de lignes que vous voulez :"))
