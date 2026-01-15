@@ -24,3 +24,7 @@ def sauvegarder_resultat():
     if le_double.text().strip() == "":
         lbl_msg.setText(" Aucun resultat a sauvegarder !")
         return
+
+    try:
+        f = open (FICHIER, "w")
+        f.write(ledouble.text(.strip())) #une seule ligne, une seule chiffre(ou nombre)
