@@ -65,8 +65,10 @@ fen = QWidget()
 fen.setWindowTitle("Exercice double")
 fen.setGeometry(100,100,420,160)
 
-#3 - Layout
+# Layout
 grid = QGridLayout()
 fen.setLayout(grid)
+
+
 
 
