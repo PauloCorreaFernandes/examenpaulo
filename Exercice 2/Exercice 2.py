@@ -40,3 +40,9 @@ def charger_resultat():
         f = open(FICHIER, "r")
         contenu = f.read().strip()
         f.close()
+
+        #validation simple : pas vide + entier
+        if contenu == ""
+            lbl_msg.setText("Erreur: fichier vide")
+            return
+
