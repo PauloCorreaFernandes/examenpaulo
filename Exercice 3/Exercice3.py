@@ -36,15 +36,15 @@ class Outils:
                 maximum = n
         return maximum
 
-    def moyenne(self):
-        #calcul de la moyenne
-        return self.somme() / len(self.nombres)
-
     def somme(self):
-        somme = 0
+        total = 0
         for n in self.nombres:
             total = total + n
         return total
+
+    def moyenne(self):
+        #calcul de la moyenne
+        return self.somme() / len(self.nombres)
 
 #programme principal
 o = Outils()
