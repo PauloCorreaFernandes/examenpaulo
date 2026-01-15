@@ -48,10 +48,10 @@ max_val = o.max()
 somme_val = o.somme()
 moyenne_val = o.moyenne()
 
-print("Minimum : " , min_val())
-print("Maximum : " , max_val())
-print("Somme : " , somme_val())
-print("Moyenne : " , moyenne_val())
+print("Minimum : " , min_val)
+print("Maximum : " , max_val)
+print("Somme : " , somme_val)
+print("Moyenne : " , moyenne_val)
 
 #Sauvegarder les resultats dans le fichier  resultat.txt
 fichier = open("resultats.txt", "w")
