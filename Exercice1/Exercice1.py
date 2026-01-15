@@ -19,8 +19,9 @@ class Triangle:
             print("*" * i)
 
 class Affichage:
-    def __init__(self,n):
+    def __init__(self):
         pass
+
     def afficher(self):
         #demander a usager le nombre de lignes
         n= int(input("Tapez le nombre de lignes que vous voulez :"))
@@ -29,13 +30,13 @@ class Affichage:
         t=Triangle(n)
 
         # afficher le premier triangle
-        t.afficher_triangle_1()
+        t.triangle_gauche()
 
         #laisser une ligne vide entre les deux triangles
         print()
 
         #afficher le deuxieme triangle
-        t.afficher_triangle_2()
+        t.triangle_droite()
 
 # programme principal
 a = Affichage()
