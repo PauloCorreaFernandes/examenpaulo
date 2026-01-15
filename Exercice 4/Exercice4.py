@@ -16,7 +16,6 @@ class Etudiangt(Personne):
 
 
 # Classe Professeur qui herite de personne
-
 class Professeur(Personne):
     def se_presenter(self):
         # Redefinition de la methode se presenter
@@ -24,10 +23,12 @@ class Professeur(Personne):
 
 #Programme Principal
 #Creation des objets
-
 p1 = Etudiangt("Paulo")
 p2 = Professeur("Barbari, Raouf")
 p3 = Personne("Seye")
+
+#Liste de contenant differents types d'objet
+personnes = [p1, p2, p3]
 
 
 
