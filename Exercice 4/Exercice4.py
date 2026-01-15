@@ -22,3 +22,12 @@ class Professeur(Personne):
         # Redefinition de la methode se presenter
         return " Je suis Professeur et je m'appelle " + self.nom
 
+#Programme Principal
+#Creation des objets
+
+p1 = Etudiangt("Paulo")
+p2 = Professeur("Barbari, Raouf")
+p3 = Personne("Seye")
+
+
+
