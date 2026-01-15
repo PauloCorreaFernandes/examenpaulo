@@ -29,15 +29,18 @@ class Outils:
         return minimum
 
     def max(self):
-        #calcule de la somme
-        total = 0
+        #initialiser le maximum
+        maximum = self.nombres[0]
         for n in self.nombres:
-            total = total + n
-        return total
+            if n > maximum:
+                maximum = n
+        return maximum
 
     def moyenne(self):
         #calcul de la moyenne
         return self.somme() / len(self.nombres)
+
+
 
 #programme principal
 o = Outils()
