@@ -6,17 +6,13 @@ class Triangle:
     #constructeur : nombre de lignes
         self.n=n
 
-    def triangle_gauche(self):
-    #methode qui affiche le triangle a gauche
-        symbol = "*"
-        for i in range(self.n):
-            print(symbol)
-            symbol = symbol + "*"
-
-    def triangle_droite(self):
-    #methode  qui affiche le triangle a droite
-        for i in range(1,self.n +1 ):
-            print("*" * i)
+    def afficher_deux_triangles(self):
+        #afficher deux triangles cote a cote
+        for i in range(1, self.n + 1):
+            gauche= "*" * i
+            espaces= " " * (self.n + 2)
+            droite= "*" * i
+            print(gauche + espaces + droite)
 
 class Affichage:
     def __init__(self):
@@ -28,15 +24,7 @@ class Affichage:
 
         #creer un objet triangle
         t=Triangle(n)
-
-        # afficher le premier triangle
-        t.triangle_gauche()
-
-        #laisser une ligne vide entre les deux triangles
-        print()
-
-        #afficher le deuxieme triangle
-        t.triangle_droite()
+        t.afficher_deux_triangles()
 
 # programme principal
 a = Affichage()
