@@ -50,12 +50,14 @@ def charger_resultat():
             valeur = int(contenu)
             le_double.setText(str(valeur))
             lbl_msg.setText("Resultat charge depuis resultats.txt")
-
-        except FileNotFoundError:
+        except ValueError:
             lbl_msg.setText("Erreur: contenu du fichier invalide")
-        except Exception as e:
+
+    except FileNotFoundError:
+        lbl_msg.setText("Erreur: Resuktats.txt n'existe pas")
+    except Exception as e:
             print("Erreur chargement :", e)
-            lbl_msg.setText("Erreur: Impossible de charger !")
+        lbl_msg.setText("Erreur: Impossible de charger !")
 
 #1 - Creer un objet application
 app = QApplication([])
