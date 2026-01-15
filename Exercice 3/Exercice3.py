@@ -52,4 +52,15 @@ print("Maximum : " , max_val())
 print("Somme : " , somme_val())
 print("Moyenne : " , moyenne_val())
 
+#Sauvegarder les resultats dans le fichier  resultat.txt
+fichier = open("resultats.txt", "w")
+fichier.write("Resultats de lexercice 3\n")
+fichier.write("Minimum : " + str(min_val)+"\n")
+fichier.write("Maximum : " + str(max_val)+"\n")
+fichier.write("Somme : " + str(somme_val)+"\n")
+fichier.write("Moyenne : " + str(moyenne_val)+"\n")
+
+
+
+
 
