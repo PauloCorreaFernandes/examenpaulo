@@ -42,7 +42,7 @@ def charger_resultat():
         f.close()
 
         #validation simple : pas vide + entier
-        if contenu == ""
+        if contenu == "":
             lbl_msg.setText("Erreur: fichier vide")
             return
 
@@ -51,6 +51,6 @@ def charger_resultat():
             le_double.setText(str(valeur))
             lbl_msg.setText("Resultat charge depuis resultats.txt")
 
-        except FileNotFoundError
+        except FileNotFoundError:
             lbl_msg.setText("Erreur: contenu du fichier invalide")
 
