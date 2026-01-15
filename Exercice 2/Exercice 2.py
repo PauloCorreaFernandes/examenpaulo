@@ -11,3 +11,8 @@ def valider_operation():
     if le_n.text().strip() == "":
         lbl_msg.setText(" Wrreur: le champ N est vide  !, S'il vous plait , tapez quelque nombre !")
         return
+    try:
+        n = int(le_n.text()) # peut lever ValueError
+        resultat = n* 2
+        le_double.setText(str(resultat))
+
