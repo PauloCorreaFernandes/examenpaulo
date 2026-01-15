@@ -5,3 +5,9 @@ import sys
 from PyQt6.QtWidgets import (QApplication, QWidget, QLabel, QPushButton, QGridLayout, QLineEdit)
 
 FICHIER = "resultats.txt"
+
+def valider_operation():
+    #Verifier que le champ N n'est pas vide
+    if le_n.text().strip() == "":
+        lbl_msg.setText(" Wrreur: le champ N est vide  !, S'il vous plait , tapez quelque nombre !")
+        return
