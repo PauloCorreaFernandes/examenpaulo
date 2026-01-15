@@ -11,4 +11,4 @@ class Triangle:
         symbol = '*'
         for i in range(self.n):
             print(symbol)
-            symbole = symbole + '*'
+            symbol = symbol + '*'
