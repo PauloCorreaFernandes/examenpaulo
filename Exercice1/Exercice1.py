@@ -34,3 +34,7 @@ class Affichage:
         #laisser une ligne vide entre les deux triangles
         print()
 
+        #afficher le deuxieme triangle
+        t.afficher_triangle_2()
+
+
