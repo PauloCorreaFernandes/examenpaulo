@@ -27,4 +27,10 @@ def sauvegarder_resultat():
 
     try:
         f = open (FICHIER, "w")
-        f.write(ledouble.text(.strip())) #une seule ligne, une seule chiffre(ou nombre)
+        f.write(le_double.text().strip()) #une seule ligne, une seule chiffre(ou nombre)
+        f.close()
+        lbl_msg.setText(" Resulta Sauvegarde sur resultats.txt")
+
+    except Exception as e:
+        print("Erreur du sauvegarder !", e)
+        lbl_msg.setText("ERREUR : Impossible de sauvegarder !")
