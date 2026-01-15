@@ -1,0 +1,64 @@
+#Examen Final : Exercice 3
+#Programme qui demande 10 entiers et calcule
+#le minimum , le maximum , la somme et la moyenne
+
+class Outils:
+    def __init__(self):
+        #liste pour stocker les entiers
+        self.nombres = []
+
+    def saisir(self):
+        #demander 10 entiers au usager
+        for i in range(1, 11):
+            n= int(input("Tapez un nombre entier(" + str(i) + "/10) : "))
+            self.nombres.append(n)
+
+    def min(self):
+        #initialiser le minimum avec le premier nombre
+        minimum = self.nombres[0]
+
+        for n in self.nombres:
+            if n < minimum:
+                minimum = n
+
+        return minimum
+
+    def max(self):
+        #initialiser le maximum
+        maximum = self.nombres[0]
+        for n in self.nombres:
+            if n > maximum:
+                maximum = n
+        return maximum
+
+    def somme(self):
+        total = 0
+        for n in self.nombres:
+            total = total + n
+        return total
+
+    def moyenne(self):
+        #calcul de la moyenne
+        return self.somme() / len(self.nombres)
+
+#programme principal
+o = Outils()
+o.saisir()
+
+min_val = o.min()
+max_val = o.max()
+somme_val = o.somme()
+moyenne_val = o.moyenne()
+
+print("Minimum : " , min_val)
+print("Maximum : " , max_val)
+print("Somme : " , somme_val)
+print("Moyenne : " , moyenne_val)
+
+
+
+
+
+
+
+
