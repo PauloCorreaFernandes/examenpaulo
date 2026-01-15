@@ -102,6 +102,11 @@ grid.addWidget(btn_sauve, 2, 0)
 grid.addWidget(btn_load, 3, 0)
 grid.addWidget(lbl_msg, 3, 1)
 
+#3 - Afficher
+fen.show()
+
+#4 - Executer
+app.exec()
 
 
 
