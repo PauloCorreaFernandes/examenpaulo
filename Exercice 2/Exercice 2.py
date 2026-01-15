@@ -15,7 +15,12 @@ def valider_operation():
         n = int(le_n.text()) # peut lever ValueError
         resultat = n* 2
         le_double.setText(str(resultat)) #le= line edit
-        lbl_msg.setText("") #lbl = label
+        lbl_msg.setText("") #lbl = label , effacer le message d'erreur si tout va bien
     except ValueError:
         lbl_msg.setText(" Erreur: Devez-vous tapez un nombre entier  !")
 
+def sauvegarder_resultat():
+    # Sauvegarde le double (champ resultat)
+    if le_double.text().strip() == "":
+        lbl_msg.setText(" Aucun resultat a sauvegarder !")
+        return
