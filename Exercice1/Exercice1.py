@@ -24,3 +24,6 @@ class Affichage:
     def afficher(self):
         #demander a usager le nombre de lignes
         n= int(input("Tapez le nombre de lignes que vous voulez :"))
+
+        #creer un objet triangle
+        t=Triangle(n)
